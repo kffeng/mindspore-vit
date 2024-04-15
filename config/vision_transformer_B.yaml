@@ -1,0 +1,26 @@
+#context参数
+seed: 2022
+use_parallel: False
+device_id: 1
+device_nums: 1
+mode: "GRAPH_MODE" # "PYNATIVE_MODE" "GRAPH_MODE"
+device_target: "Ascend"
+max_call_depth: 10000
+save_graphs: False
+parallel_mode: "DATA_PARALLEL"
+sink_mode: False
+gradients_mean: False
+
+
+save_dir: "./save_checkpoints"
+
+data_path: "../../dataset/flower_photos"
+
+
+batch_size: 8
+start_lr: 0.001
+end_lr: 0.0001
+num_classes: 5
+save_ckpt_epochs: 50
+epochs: 100
+warmup_epochs: 5
