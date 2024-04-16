@@ -2,3 +2,4 @@ rank_0
 summary_dir
 profiler_data
 save_checkpoints
+utils/__pycache__/*
